@@ -1,0 +1,17 @@
+{
+  "name": "millsberry-js",
+  "version": "0.0.1",
+  "description": "Millsberry Rewritten in ElectronJS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Millsberry"
+  ],
+  "author": "tylerTHPS",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.2"
+  }
+}

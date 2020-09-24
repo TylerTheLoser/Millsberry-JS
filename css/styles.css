@@ -1,0 +1,205 @@
+/* CSS for Millsville */
+/* Ordinary Links */
+A {
+    COLOR:#000099;
+    FONT-FAMILY: Comic Sans MS,helvetica;
+    FONT-SIZE:11pt;
+    TEXT-DECORATION:none;
+    FONT-WEIGHT: bold;
+  }
+  /* Links on mouseovers */
+  A:hover {
+    FONT-FAMILY: Comic Sans MS,helvetica;
+    COLOR:#990000;
+  }
+  
+  /* Table cells, paragraphs, body */
+  TD,P,body {
+    FONT-FAMILY:Comic Sans MS,helvetica;
+    FONT-SIZE:11pt;
+  }
+  
+  INPUT {
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 2px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 2px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Comic Sans MS, Helvetica, sans-serif;
+  } 
+  
+  TEXTAREA {
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Comic Sans MS, Helvetica, sans-serif;
+  } 
+  
+  SELECT {
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Comic Sans MS, Helvetica, sans-serif;
+  } 
+  
+  /* For when you need your text SMALL */
+  .smallfont {
+    FONT-SIZE:7.5pt;
+  }
+  
+  .footerfont {
+    FONT-SIZE:9pt;
+  }
+  
+  .reg-field {
+      font-family: Trebuchet MS;
+      font-size: 16px;
+      height: 25px;
+      background: #ffffff;
+      font-weight:bold;
+      color: #000000;
+      border: 1px solid #000000;
+  }
+  
+  .ctc_font {
+      font-family: Trebuchet MS;
+      font-size: 20px;
+      font-weight:bold;
+      color: #4E2589;
+  }
+  .ctc_link_font {
+      font-family: Trebuchet MS;
+      font-size: 20px;
+      font-weight:bold;
+      color: #4E2589;
+  }
+  
+  .ctc_link_font:hover {
+      font-family: Trebuchet MS;
+      font-size: 20px;
+      font-weight:bold;
+      color: #9F99BB;
+  }
+  
+  .ctc_font_small {
+      font-family: Trebuchet MS;
+      font-size: 11px;
+      font-weight:bold;
+      color: #4E2589;
+  }
+  
+  /* Site Color Coding */
+  
+  .article_body {
+    background-color: #FFFFFF;
+  }
+  
+  /*  Same as regular TDs, with BG Color */
+  .sidenav_TD {
+    background-color: #CBF2FE;
+  }
+  
+  .footer_TD {
+    background-color: #CBF2FE;
+  }
+  
+  .header_stripe_TD {
+    COLOR:#FFFFFF;
+    background-color: #1887B6;
+    FONT-WEIGHT: bold;
+  }
+  
+  .header_TD {
+    background-color: #1887B6;
+  }
+  
+  .content_TD {
+    background-color: #FFFFFF;
+  }
+  
+  /* Regular Table Cell Styles */
+  .table_top {
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    background-color: #CCCCCC;
+    BORDER-RIGHT: #000000 2px solid;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #000000;
+  }
+  .table_bottom {
+    FONT-SIZE: 7.5pt;
+    background-color: #FFFFFF;
+    BORDER-RIGHT: #000000 2px solid;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #000000;
+  }
+  
+  /* Game Launcher Styles*/
+  .game_menu_top {
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    background-color: #CCCCCC;
+    BORDER-RIGHT: #000000 2px solid;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #000000;
+  }
+  .game_menu_bottom {
+    FONT-SIZE: 7.5pt;
+    background-color: #FFFFFF;
+    BORDER-RIGHT: #000000 2px solid;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #000000;
+  }
+  
+  /* Checkboxes */
+  .checkbox {
+    BORDER-RIGHT: #000000 0px;
+    BORDER-TOP: #000000 0px;
+    BORDER-LEFT: #000000 0px;
+    BORDER-BOTTOM: #000000 0px;
+  }
+  
+  .listAllInStoreLink {
+    COLOR:#FFFFFF;
+    FONT-FAMILY: Comic Sans MS,helvetica;
+    FONT-SIZE:10pt;
+    TEXT-DECORATION:none;
+    FONT-WEIGHT: bold;
+  }
+  .listAllInStoreLink:hover {
+    FONT-FAMILY: Comic Sans MS,helvetica;
+    COLOR:#990000;
+  }
+  /*
+       FILE ARCHIVED ON 08:09:26 Jun 28, 2005 AND RETRIEVED FROM THE
+       INTERNET ARCHIVE ON 14:23:30 Sep 22, 2020.
+       JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+  
+       ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+       SECTION 108(a)(3)).
+  */
+  /*
+  playback timings (ms):
+    LoadShardBlock: 415.764 (3)
+    PetaboxLoader3.resolve: 96.059
+    CDXLines.iter: 36.093 (3)
+    load_resource: 214.615
+    esindex: 0.023
+    captures_list: 512.619
+    PetaboxLoader3.datanode: 210.993 (4)
+    exclusion.robots.policy: 0.291
+    RedisCDXSource: 49.811
+    exclusion.robots: 0.312
+  */
