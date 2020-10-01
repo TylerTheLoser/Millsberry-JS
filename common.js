@@ -338,3 +338,15 @@ function startup(){
 
 //todo: weather api
 
+//login system:
+
+function isOnline(){
+	if(navigator.onLine = "true"){
+		document.getElementById('onlinestatus').innerHTML = "You are online!";
+		console.log("You are online");
+	} else {
+		document.getElementById('onlinestatus').innerHTML = "You are OFFLINE";
+		console.log("Error");
+	}
+	//console.log(navigator.onLine);
+  }

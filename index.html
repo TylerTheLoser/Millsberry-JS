@@ -7,10 +7,14 @@
       <link rel='stylesheet' type='text/css' href='css/theme/royal.css'>
       <link rel='stylesheet' type='text/css' href='css/template.css'>
       <link rel='stylesheet' type='text/css' href='css/global.css'>
+      <link rel='stylesheet' type='text/css' href='css/offline-theme-dark.css'>
       <LINK REL="SHORTCUT ICON" HREF="favicon.ico">
    </HEAD>
    <SCRIPT type="text/javascript" SRC="common.js"></SCRIPT>
-   <body onload="startup()" style="margin-left:0px;margin-top:0px;background-image:url('graphics/tile_mill.gif')">
+   <script type="text/javascript" src="scripts/offline.min.js"></script>
+   <script type="text/javascript" src="scripts/weather.js"></script>
+   <body onload="startup(); isOnline(); Offline.check();" style="margin-left:0px;margin-top:0px;background-image:url('graphics/tile_mill.gif')">
+      <p id="onlinestatus">Checking online status...</p>
       <TABLE BORDER="0" HEIGHT="100%" WIDTH="100%" ALIGN="LEFT" CELLSPACING="0" CELLPADDING="0">
          <TR>
             <TD ROWSPAN='2'><A HREF='index.html'><IMG SRC="graphics/logo_over_v2.gif" onMouseOut="src='graphics/logo_over_v2.gif';" onMouseOver="src='graphics/logo_over_v2.gif';" BORDER="0" ALT="Back to MAIN" style="text-align: center;"></A></TD>
@@ -69,7 +73,7 @@
                         <BR>
                            <a href="signup.html"><input style="border: None; padding:3px;" type="image" src="graphics/signup.png"></input></a>
                         <BR>
-                           <input style="border: None; padding:3px;" type="image" src="graphics/map.png" />
+                           <a href="main_map.html"><input style="border: None; padding:3px;" type="image" src="graphics/map.png" /></a>
                         <BR>
                            <input style="border: None; padding:3px;" type="image" src="graphics/games.png" />
                         <BR>
@@ -286,7 +290,7 @@
                                                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                                    <tr>
                                                       <td>
-                                                         <img src="graphics/weather_icons/sunny.gif" width="80" height="85" align="left">
+                                                         <img id="weather-icon" src="graphics/weather_icons/sunny.gif" width="80" height="85" align="left">
                                                       </td>
                                                       <td width="100%">
                                                          <table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -294,34 +298,35 @@
                                                                <td style="font:12px;">
                                                                   High:
                                                                </td>
-                                                               <td style="font:12px;">
-                                                                  &nbsp;&nbsp;85&deg;
+                                                               <td id="weather-high" style="font:12px;">
+                                                                  
                                                                </td>
                                                             </tr>
                                                             <tr bgcolor="#FFFFFF">
                                                                <td style="font:12px;">
                                                                   Low:
                                                                </td>
-                                                               <td style="font:12px;">
-                                                                  &nbsp;&nbsp;75&deg;
+                                                               <td id="weather-low" style="font:12px;">
+                                                                  
                                                                </td>
                                                             </tr>
                                                             <tr bgcolor="#EEEEEE">
                                                                <td style="font:12px;">
                                                                   Humidity:
                                                                </td>
-                                                               <td style="font:12px;">
-                                                                  &nbsp;&nbsp;55%
+                                                               <td id="weather-humid" style="font:12px;">
+                                                                  
                                                                </td>
                                                             </tr>
                                                             <tr bgcolor="#FFFFFF">
                                                                <td style="font:12px;">
                                                                   Wind:
                                                                </td>
-                                                               <td style="font:12px;">
-                                                                  &nbsp;&nbsp;None
+                                                               <td id="weather-wind" style="font:12px;">
+                                                                  
                                                                </td>
                                                             </tr>
+                                                            <!--
                                                             <tr bgcolor="#EEEEEE">
                                                                <td style="font:12px;">
                                                                   Record Hi/Lo:
@@ -330,6 +335,7 @@
                                                                   &nbsp;&nbsp;97&deg;/61&deg;
                                                                </td>
                                                             </tr>
+                                                            !-->
                                                          </table>
                                                       </td>
                                                    </tr>
