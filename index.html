@@ -13,6 +13,7 @@
    <SCRIPT type="text/javascript" SRC="common.js"></SCRIPT>
    <script type="text/javascript" src="scripts/offline.min.js"></script>
    <script type="text/javascript" src="scripts/weather.js"></script>
+   <script type="text/javascript" src="scripts/login.js"></script>
    <body onload="startup(); isOnline(); Offline.check();" style="margin-left:0px;margin-top:0px;background-image:url('graphics/tile_mill.gif')">
       <p id="onlinestatus">Checking online status...</p>
       <TABLE BORDER="0" HEIGHT="100%" WIDTH="100%" ALIGN="LEFT" CELLSPACING="0" CELLPADDING="0">
@@ -40,10 +41,10 @@
                            <B>
                            &nbsp;&nbsp;&nbsp;
                            Username
-                           <input type='text' name='login_username' SIZE='10'>
+                           <input type='text' id="login_username" name='login_username' SIZE='10'>
                            Password
-                           <input type='password' name='login_pass' SIZE='10'>&nbsp;
-                           <input type='image' src='graphics/visit_log_in.gif' HEIGHT=20 name='login' value='go' border='0' align='top' onMouseOut="src='graphics/visit_log_in.gif';" onMouseOver="src='graphics/visit_log_in.gif';"> <A HREF='http://www.millsberry.com/town_hall/support.phtml?q=pw'><FONT COLOR='black' class='smallfont'>[ forgot your password? ]</FONT></A>              </B>
+                           <input type='password' id="login_password" name='login_pass' SIZE='10'>&nbsp;
+                           <img type='image' src='graphics/visit_log_in.gif' HEIGHT=20 name='login' value='go' border='0' align='top' onMouseOut="src='graphics/visit_log_in.gif';" onMouseOver="src='graphics/visit_log_in.gif';" onclick="initLogin(document.getElementById('login_username').value, document.getElementById('login_password').value)"> <A HREF='http://www.millsberry.com/town_hall/support.phtml?q=pw'><FONT COLOR='black' class='smallfont'>[ forgot your password? ]</FONT></A>              </B>
                         </TD>
                      </TR>
                   </FORM>

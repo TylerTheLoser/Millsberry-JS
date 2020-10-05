@@ -12,9 +12,9 @@ request.onload = () => {
             case "clear sky":
                 document.getElementById('weather-icon').src = "graphics/sunny.gif";
             case "few clouds":
-                document.getElementById('weather-icon').src = "http://openweathermap.org/img/wn/02n@2x.png";
+                document.getElementById('weather-icon').src = url("http://openweathermap.org/img/wn/02n@2x.png");
             case "scattered clouds":
-                document.getElementById('weather-icon').src = "http://openweathermap.org/img/wn/03d@2x.png";
+                document.getElementById('weather-icon').src = url("http://openweathermap.org/img/wn/03d@2x.png");
             case "broken clouds":
                 document.getElementById('weather-icon').src = "http://openweathermap.org/img/wn/04d@2x.png";
             case "shower rain":
