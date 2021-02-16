@@ -1,0 +1,429 @@
+doctype html
+head
+  meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+  title Millsberry - Main
+  style
+    include ../css/styles.css
+    include ../css/royal.css
+    include ../css/template.css
+    include ../css/offline-theme-dark.css
+  link(rel='SHORTCUT ICON' href='favicon.ico')
+  script
+    include ../scripts/common.js
+    include ../scripts/weather.js
+script(type='text/javascript' src='scripts/offline.min.js')
+script(type='text/javascript' src='scripts/login.js')
+table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpadding='0')
+  tr
+    td(rowspan='2')
+      a(href='/')
+        img(src='/public/graphics/logo_over_v2.gif' onmouseout="src='/public/graphics/logo_over_v2.gif';" onmouseover="src='/public/graphics/logo_over_v2.gif';" border='0' alt='Back to MAIN' style='text-align: center;')
+    td(width='650' height='55' valign='TOP' style='background-color: #cbf2fe;')
+      table(border='0' cellpadding='0' cellspacing='0')
+        tr
+          td
+            a(href='/home')
+              img(src='/public/graphics/visit_home_v2.gif' border='0' alt='Visit your Home!' onmouseout="src='/public/graphics/visit_home_v2.gif';" onmouseover="src='/public/graphics/visit_home_over_v2.gif';")
+          td
+            a(href='/main_map/downtown')
+              img(src='/public/graphics/visit_shopping_v2.gif' border='0' alt='Visit the Town Center!' onmouseout="src='/public/graphics/visit_shopping_v2.gif';" onmouseover="src='/public/graphics/visit_shopping_over_v2.gif';")
+          td
+            a(href='/highscores')
+              img(src='/public/graphics/visit_hi_scores_v2.gif' border='0' alt='Visit the Hi Scores!' onmouseout="src='/public/graphics/visit_hi_scores_v2.gif';" onmouseover="src='/public/graphics/visit_hi_scores_over_v2.gif';")
+          td
+            a(href='/faq')
+              img(src='/public/graphics/visit_faq_v2.gif' border='0' alt='Visit the Help Pages!' onmouseout="src='/public/graphics/visit_faq_v2.gif';" onmouseover="src='/public/graphics/visit_faq_over_v2.gif';")
+        form(name='login' action='/' method='post')
+          tr
+            td(colspan='4' valign='bottom' style='color:black')
+              b
+                | Username
+                input#login_username(type='text' name='login_username' size='10')
+                |                            Password
+                input#login_password(type='password' name='login_pass' size='10')
+                img(type='image' src='/public/graphics/visit_log_in.gif' height='20' name='login' value='go' border='0' align='top' onmouseout="src='/public/graphics/visit_log_in.gif';" onmouseover="src='/public/graphics/visit_log_in.gif';" onclick="initLogin(document.getElementById('login_username').value, document.getElementById('login_password').value)")
+                a(href='/townhall/support')
+                  font.smallfont(color='black') [ forgot your password? ]
+    td(width='100%' bgcolor='#000000' colspan='2')
+  form(name='search' action='/site_search' method='get')
+    tr
+      td.header_stripe_TD(colspan='3' width='600' height='25' valign='TOP' align='LEFT')
+        table(width='100%' border='0' cellpadding='0' cellspacing='0')
+          tr
+            td(style='background-color: #1887b6')
+              img(src='/public/graphics/header_stripe.gif')
+              img(src='/public/graphics/slice_11.gif')
+              | Address Book 
+              input(type='text' name='search')  
+              input.checkbox(type='image' src='/public/graphics/visit_go.gif' style='text-align: right' height='25' name='login' border='0' onmouseout="src='/public/graphics/visit_go.gif';" onmouseover="src='/public/graphics/visit_go.gif';")
+  tr
+    td.sidenav_TD(width='150' valign='TOP' height='100%')
+      table(border='0' cellpadding='0' cellspacing='0' width='100%')
+        tr
+          td(align='CENTER' valign='TOP')
+            br
+            a(href='/signup')
+              input(style='border: None; padding:3px;' type='image' src='/public/graphics/signup.png')
+            br
+            a(href='/main_map')
+              input(style='border: None; padding:3px;' type='image' src='/public/graphics/map.png')
+            br
+            a(href='/games')
+              input(style='border: None; padding:3px;' type='image' src='/public/graphics/games.png')
+            br
+            br
+            a(href='/signup')
+              img(src='/public/graphics/prebuddy.gif' border='1')
+    br
+    br
+    td(width='650' height='100%' valign='TOP' align='LEFT')
+      table.content_TD(border='0' cellpadding='0' cellspacing='5' width='100%')
+        tr
+          td(width='11' align='center' background='/public/graphics/vertline.gif')
+            img(src='/public/graphics/vertline.gif')
+          td
+            table(width='100%' cellpadding='0' cellspacing='0' border='0')
+              // BANNER TR
+              tr
+                td(colspan='3' height='100')
+                  img(src='/public/graphics/gazette_banner.gif' title='Millsberry Gazette')
+              // BLUE BACKGROUND HEADLINE TR
+              tr.header_stripe_TD
+                td(width='284' text-align='left')
+                  | News Headlines
+                td(width='10')
+                td(width='284' text-align='right')
+                  p#thedate(style='text-align: right; padding-right:3px') &nbsp;
+              // CONTENT TR
+              tr
+                // LEFT COLUMN
+                td(width='284' valign='top' text-align='CENTER')
+                  br
+                  // BEGIN FEATURED STORY BLOCK
+                  a(href='/signup')
+                    img(src='/public/graphics/welcome_signup.gif' border='1' width='275' height='200')
+                  br
+                  div
+                    table(cellpadding='0' cellspacing='0' border='0' width='100%')
+                      tr
+                        td.article_body(text-align='center')
+                          b
+                          br
+                          br
+                      tr
+                        td.article_body(text-align='left')
+                          | If you look over the hill, you&apos;ll see the far edge of a small city called Millsberry.
+                          | It used to be a small town, but recently, Millsberry has grown beyond its borders. 
+                          | Walk down the hill and you step into the outer neighborhoods. Just a little further, and you walk into the center of Town. 
+                          p
+                            | If you want to become a citizen, just click on the SIGN UP button to the left.
+                          p
+                            | You&apos;ll get your own customizable home,
+                            | access to the shopping district, and get to play a bunch of great games! It&apos;s completely free and only takes a second.
+                          p
+                            | Here in Millsberry, there are TONS of things to do!  Whether you want to spend your time decorating your home,
+                            | cleaning up Peabody Park, or hanging out at Millsberry Academy -- it&apos;s all up to you!  You&apos;re in complete control!
+                          p
+                            | Be sure to save those Millsbucks, though!  There are loads of items to buy, including food, books, and clothes that
+                            | your character can wear, but you&apos;ll need Millsbucks to get &apos;em!
+                          p
+                            | Don&apos;t know where to start?  Head on over to Town Hall and get acquainted with the laws here in Millsberry, or to the 
+                            | bank to activate your Millsbucks account!  There&apos;s so much to do here, so make the most out of it and go explore 
+                            | Millsberry today!
+                            br
+                  // END FEATURED STORY BLOCK
+                  hr(size='1' noshade='')
+                  // BEIGIN POLL BLOCK
+                  div
+                    table(cellpadding='0' cellspacing='0' border='0' width='100%')
+                      tr
+                        td(width='4')
+                        td(width='275' height='215' background='/public/graphics/poll_results_2_v2.gif' valign='top')
+                          table(border='0' cellpadding='0' cellspacing='0' width='100%')
+                            tr
+                              td(width='25' height='35')
+                              td(align='center' colspan='2' style='font:12px;text-align: center;')
+                              td(width='25')
+                            tr
+                              td(width='25')
+                              td(align='center' colspan='2' style='font:12px;text-align: center;')
+                                u Last Week&apos;s Poll Results:
+                              td(width='25')
+                            tr
+                              td(width='25')
+                              td(align='center' colspan='2' style='font:12px;text-align: center;')
+                                b
+                                  | Who would you want with you on a deserted island?
+                              td(width='25')
+                            tr
+                              td(width='25') &nbsp;
+                              td(align='left' valign='top' style='font:12px;text-align: left;') &nbsp;&nbsp;Best Friend
+                              td(align='center' valign='top' style='font:12px;text-align: center;') 39%
+                              td(width='25') &nbsp;
+                            tr
+                              td(width='25') &nbsp;
+                              td(align='left' valign='top' style='font:12px;text-align: left;') &nbsp;&nbsp;Parent
+                              td(align='center' valign='top' style='font:12px;text-align: center;') 30%
+                              td(width='25') &nbsp;
+                            tr
+                              td(width='25') &nbsp;
+                              td(align='left' valign='top' style='font:12px;text-align: left;') &nbsp;&nbsp;Pet
+                              td(align='center' valign='top' style='font:12px;text-align: center;') 19%
+                              td(width='25') &nbsp;
+                            tr
+                              td(width='25') &nbsp;
+                              td(colspan='2' style='font:12px;text-align: center;')
+                                a(href='' style='font:12px;') See all results
+                              td(width='25') &nbsp;
+                        td(width='4')
+                  // END POLL BLOCK
+                  hr(size='1' noshade='')
+                  a(href='/peabody_park')
+                    img(src='/public/graphics/ad_museum_2_v1.gif' title='' border='0')
+                  hr(size='1' noshade='')
+                  // BEGIN TABLE OF CONTENTS
+                  div
+                    table(cellpadding='0' cellspacing='0' width='100%' border='0')
+                      tr
+                        td.header_stripe_TD(align='left' valign='top')
+                          | Contents
+                      tr
+                        td
+                          img(src='/public/graphics/paperbullet.gif' width='8' height='8')
+                          font(size='-1')
+                            | Yard Sale Classifieds . . . 
+                            a(href='/classified')
+                              font(size='-1') page 4
+                  // END TABLE OF CONTENTS
+                td(width='10 align=' background='/public/graphics/vertline.gif')
+                  img(src='/public/graphics/vertline.gif')
+                // RIGHT COLUMN
+                td(width='284' valign='top' align='center')
+                  br
+                  center
+                    a(href='/refer' target='_BLANK')
+                      img(src='/public/graphics/ad_choosebreakfast_1.gif' title='www.presidentschallenge.org' width='275' height='225' border='0')
+                    hr(size='1' noshade='')
+                    table(border='0' cellpadding='0' cellspacing='0' height='32' width='275')
+                      tr
+                        td(align='CENTER' style='font:13px;' colspan='2')
+                          | Save your own mix in the 
+                          a(href='/studio' style='font:13px;') Studio!
+                      tr
+                        td(width='100%' align='CENTER' colspan='2')
+                          img(src='/public/graphics/top10_gazette.gif' height='152' width='275')
+                      tr
+                        td
+                          table(border='0' cellpadding='2' cellspacing='0' height='100%' width='100%')
+                            tr
+                              td(width='137' align='LEFT' bgcolor='#FFFFFF')
+                                b 1
+                                a(href="/user" style='font:12px;') Crayzee
+                              td(width='137' align='LEFT' bgcolor='#FFFFFF')
+                                b 2
+                                a(href="/user") madmix2005
+                            td(width='137' align='LEFT' bgcolor='#FFFFFF')
+                              b 3
+                              a(href="/user" style='font:12px;') Coolest Mix Ever
+                            td(width='137' align='LEFT' bgcolor='#FFFFFF')
+                              b 4
+                              a(href="/user" style='font:12px;') Wocky Mix
+                            tr
+                              td(width='137' align='LEFT' bgcolor='#FFFFFF')
+                                b 5
+                                a(href="/user" style='font:12px;') Dragon Dues
+                              td(width='137' align='LEFT' bgcolor='#FFFFFF')
+                                b 6
+                                a(href="/user" style='font:12px;') bebel
+                            td(width='137' align='LEFT' bgcolor='#FFFFFF')
+                              b 7
+                              a(href="/user" style='font:12px;') funkdafied
+                            td(width='137' align='LEFT' bgcolor='#FFFFFF')
+                              b 8
+                              a(href="/user" style='font:12px;') patrick1271
+                            tr
+                              td(width='137' align='LEFT' bgcolor='#FFFFFF')
+                                b 9
+                                a(href="/user" style='font:12px;') BookEndz Beetz
+                              td(width='137' align='LEFT' bgcolor='#FFFFFF')
+                                b 10
+                                a(href="/user" style='font:12px;') totally rad
+                    hr(size='1' noshade='')
+                    // BEGIN WEATHER BLOCK
+                    div
+                      table(cellpadding='0' cellspacing='0' border='0' width='100%')
+                        tr
+                          td.header_stripe_TD(align='left')
+                            | Today&apos;s Weather
+                        tr
+                          td(align='center')
+                            table(width='100%' cellpadding='0' cellspacing='0' border='0')
+                              tr
+                                td
+                                  img#weather-icon(src='/public/graphics/weather_icons/sunny.gif' width='80' height='85' align='left')
+                                td(width='100%')
+                                  table(width='100%' border='0' cellpadding='0' cellspacing='0')
+                                    tr(bgcolor='#EEEEEE')
+                                      td(style='font:12px;')
+                                        | High:
+                                      td#weather-high(style='font:12px;')
+                                    tr(bgcolor='#FFFFFF')
+                                      td(style='font:12px;')
+                                        | Low:
+                                      td#weather-low(style='font:12px;')
+                                    tr(bgcolor='#EEEEEE')
+                                      td(style='font:12px;')
+                                        | Humidity:
+                                      td#weather-humid(style='font:12px;')
+                                    tr(bgcolor='#FFFFFF')
+                                      td(style='font:12px;')
+                                        | Wind:
+                                      td#weather-wind(style='font:12px;')
+                                    //
+                                      <tr bgcolor="#EEEEEE">
+                                      <td style="font:12px;">
+                                      Record Hi/Lo:
+                                      </td>
+                                      <td style="font:12px;">
+                                      &nbsp;&nbsp;97&deg;/61&deg;
+                                      </td>
+                                      </tr>
+                                      !
+                    // END WEATHER BLOCK
+                    hr(size='1' noshade='')
+                    a(href='/theater')
+                      img(src='/public/graphics/MdgscrWebAdV11.jpg' title='Madagascar' border='0')
+                    hr(size='1' noshade='')
+                    // BEGIN HOME TOUR BLOCK
+                    div
+                      table(width='100%' cellspacing='0' cellpadding='0')
+                        tr
+                          td.header_stripe_TD(align='left')
+                            | Home Tour
+                          td.article_body(align='left')
+                            table(border='0' cellpadding='0' cellspacing='0' width='100%')
+                              tr
+                                td
+                                  | 1.) 
+                                  a(href='/user=loveitorloseit') loveitorloseit
+                                td
+                                  | 2.) 
+                                  a(href='/user=jogo52793') jogo52793
+                    // END HOME TOUR BLOCK
+                    hr(size='1' noshade='')
+                    div
+                      table(width='100%' cellspacing='0' cellpadding='0')
+                        tr
+                          td.header_stripe_TD(align='left' width='100%' colspan='2')
+                            | High Scores: 
+                            br
+                            | &nbsp;Sherman Home Run Derby
+                        tr
+                        tr(bgcolor='#FFFFFF')
+                          td
+                            a(href='/user=tjkitkat') tjkitkat
+                            | :
+                          td(align='left')
+                            | 850,127 pts
+                        tr(bgcolor='#EEEEEE')
+                          td
+                            a(href='/user=crystle11') crystle11
+                            | :
+                          td(align='left')
+                            | 750,199 pts
+                        tr(bgcolor='#FFFFFF')
+                          td
+                            a(href='/user=iakona4586') iakona4586
+                            | :
+                          td(align='left')
+                            | 712,258 pts
+                        tr(bgcolor='#EEEEEE')
+                          td
+                            a(href='/user=snoopylou') snoopylou
+                            | :
+                          td(align='left')
+                            | 680,028 pts
+                        tr(bgcolor='#FFFFFF')
+                          td
+                            a(href='/user=syara') syara
+                            | :
+                          td(align='left')
+                            | 595,183 pts
+                    hr(size='1' noshade='')
+                    // BEGIN FEATURED BUDDY BLOCK
+                    div
+                      table(cellpadding='0' cellspacing='0' border='0' width='100%')
+                        tr
+                          td.header_stripe_TD(align='left')
+                            | Featured Citizen
+                        tr
+                        tr
+                          td.article_body(align='left')
+                            br
+                            |                                                 Meet Judy, our citizen of the week!
+                            br
+                            br
+                            |                                                 Judy lives at 14498 Breeze Street in the quaint little neighborhood of Golden Valley.  She&apos;s been a citizen since December 05, 2004, and is really enjoying Millsberry&apos;s small-town atmosphere.
+                            br
+                            br
+                            |                                                 Judy&apos;s friends describe her as a quiet yet friendly person.  Though she might seem a little shy when you first meet her, you&apos;ll soon discover that Judy is quite easygoing and pleasant to talk to.  Those who would like to have a conversation with Judy should try checking her favorite hangout, 
+                            a(href='/peabody_park' title='In the mood for some fishing?') Peabody Park
+                            | .  If she&apos;s there, Judy will usually be the one lounging around in the carefree colors of pink, magenta, or light blue.
+                            br
+                            br
+                            |                                                 In fact, many of Judy&apos;s friends have said that talking to her is one of their favorite things to do, since she always has something fascinating to discuss.  Judy has earned a reputation around 
+                            a(href='/academy' title='Visit the Academy Today!') Millsberry Academy
+                            |  as a very deep thinker, due to the great effort she puts into her schoolwork and the numerous academic honors she&apos;s earned.  In addition to her studies, though, there are a wide variety of topics that Judy takes an active interest in when she&apos;s not on the grounds of Millsberry Academy.
+                            br
+                            br
+                            |                                                 One such topic is archaeology.  Judy is fascinated by history, and as a result she often spends hours in the library reading up on ancient cultures.  If she&apos;s not poring over a pile of books in the Millsberry Academy Library, Judy is usually at the 
+                            a(href='/museum' title='Check out the Museum!') Millsberry Museum
+                            | , looking at old, precious artifacts.  As a matter of fact, Judy was one of the first to see the rare vintage book that Carla Robbins discovered in the basement of Bookends Bookshop a few weeks ago.  
+                            br
+                            br
+                            |                                                 Whenever friends ask about her love of archaeology, Judy explains that the subject has all the excitement and suspense of unraveling a mystery - a real mystery!  As it turns out, mysteries are another of Judy&apos;s main interests.  While she prefers the true-life mystery of archaeology, the truth is that she&apos;s unable to refuse a good mystery novel.
+                            br
+                            br
+                            |                                                 On weekends, you can usually find Judy hanging out in her backyard or at her best friend&apos;s house, where they love to play all sorts of games.  Most of the time when they&apos;re having fun, Judy and her best friend like to have some pop, rockabilly, or rap playing in the background, as those are her favorite musical genres.  Judy volunteers at Peabody Park when she has some spare time, where she picks up trash to help keep the place clean.  She also puts her sharp mind to work by assisting the police as they try to track down Millsberry&apos;s most wanted criminals, and the community appreciates her effort.
+                            br
+                            br
+                            |                                                 Thanks for being a fine citizen, Judy, and congratulations on being named Millsberry&apos;s citizen of the week!
+                            p
+                              | To find out more, 
+                              a(href='/user=judyann88') turn the page
+                              | !
+                    // END FEATURED BUDDY BLOCK
+                    hr(size='1' noshade='')
+          td(width='11' align='center' background='/public/graphics/vertline.gif')
+            img(src='/public/graphics/vertline.gif')
+      table(border='0' width='100%' cellpadding='0' cellspacing='0')
+        tr
+          td.footerfont(colspan='3' align='CENTER')
+            | THIS PAGE CONTAINS ADVERTISEMENTS
+    //
+      <TD WIDTH='150' VALIGN='TOP' ALIGN='CENTER' HEIGHT='100%'>
+      <form name="language_form" method="POST">
+      <font style="font-size:9pt">Select Language:</font><br>
+      <select name="lang" onchange="document.language_form.submit();">
+      <option value="en" selected="selected">English</option>
+      <option value="es" >Espa&ntilde;ol</option>
+      </select>
+      </form>
+      </TD>
+    td(width='100%')
+  tr
+    td.footer_TD(colspan='4' width='100%' align='CENTER')
+      span.footerfont
+        | Madagascar TM &amp; &copy; 2005 DreamWorks Animation L.L.C.
+        br
+        | MILLSBERRY, characters, logos, product names and all related indicia are trademarks of Mills Online, Inc., &copy; 2004, 2005.
+        br
+        |  &reg; denotes Reg. US Pat. &amp; TM Office. All rights reserved.
+        br
+        |                Use of this site signifies your acceptance of the 
+        a(href='/town_hall/terms') Terms and Conditions
+        | .
+        br
+        |                Please view our 
+        a(href='/town_hall/terms') Privacy Policy
+        | .

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Chillsberry</Name>
+    <RootNamespace>Chillsberry</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>68f74d1d-d110-4034-84b9-98616be6ce5e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="css\offline-theme-dark.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="css\template.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="css\royal.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="css\styles.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\graphics\ad_choosebreakfast_1.gif" />
+    <Content Include="public\graphics\ad_fooddrive_1.gif" />
+    <Content Include="public\graphics\ad_furniture_3_v1.gif" />
+    <Content Include="public\graphics\ad_museum_2_v1.gif" />
+    <Content Include="public\graphics\ad_postoffice_1_v1.gif" />
+    <Content Include="public\graphics\ad_post_office_package_v1.gif" />
+    <Content Include="public\graphics\coach_tip.gif" />
+    <Content Include="public\graphics\games.png" />
+    <Content Include="public\graphics\gazette_banner.gif" />
+    <Content Include="public\graphics\header_stripe.gif" />
+    <Content Include="public\graphics\logo_over_v2.gif" />
+    <Content Include="public\graphics\map.png" />
+    <Content Include="public\graphics\MdgscrWebAdV11.jpg" />
+    <Content Include="public\graphics\mighty_giants_ad.jpg" />
+    <Content Include="public\graphics\Music_top10_bg.gif" />
+    <Content Include="public\graphics\news_danner_pear_2007-03-01.jpg" />
+    <Content Include="public\graphics\paperbullet.gif" />
+    <Content Include="public\graphics\prebuddy.gif" />
+    <Content Include="public\graphics\signup.png" />
+    <Content Include="public\graphics\slice_11.gif" />
+    <Content Include="public\graphics\tile_mill.gif" />
+    <Content Include="public\graphics\top10_gazette.gif" />
+    <Content Include="public\graphics\vertline.gif" />
+    <Content Include="public\graphics\visit_faq_over_v2.gif" />
+    <Content Include="public\graphics\visit_faq_over_v2.htm" />
+    <Content Include="public\graphics\visit_faq_v2.gif" />
+    <Content Include="public\graphics\visit_go.gif" />
+    <Content Include="public\graphics\visit_hi_scores_over_v2.gif" />
+    <Content Include="public\graphics\visit_hi_scores_v2 %281%29.gif" />
+    <Content Include="public\graphics\visit_hi_scores_v2.gif" />
+    <Content Include="public\graphics\visit_home_over_v2.gif" />
+    <Content Include="public\graphics\visit_home_over_v2.htm" />
+    <Content Include="public\graphics\visit_home_v2.gif" />
+    <Content Include="public\graphics\visit_logo_v2.gif" />
+    <Content Include="public\graphics\visit_log_in.gif" />
+    <Content Include="public\graphics\visit_shopping_over_v2.gif" />
+    <Content Include="public\graphics\visit_shopping_over_v2.htm" />
+    <Content Include="public\graphics\visit_shopping_v2.gif" />
+    <Content Include="public\graphics\weather_icons\light_rain.gif" />
+    <Content Include="public\graphics\weather_icons\overcast.gif" />
+    <Content Include="public\graphics\weather_icons\partly_cloudy.gif" />
+    <Content Include="public\graphics\weather_icons\sunny.gif" />
+    <Content Include="public\graphics\welcome_signup.gif" />
+    <Content Include="requirements.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\index.js" />
+    <Content Include="routes\users.js" />
+    <Content Include="package.json" />
+    <Content Include="css\main.css" />
+    <Content Include="README.md" />
+    <Content Include="scripts\common.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="scripts\weather.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\index.pug" />
+    <Content Include="views\layout.pug" />
+    <Content Include="views\error.pug" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="scripts\" />
+    <Folder Include="public\graphics\" />
+    <Folder Include="public\graphics\weather_icons\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,7 @@
+Highlight the requirements needed for this project.
+
+-rewrite the HTML into PUG
+-rewrite the client based javascript
+-handle the server-side javascript
+-replace the flash objects
+-
