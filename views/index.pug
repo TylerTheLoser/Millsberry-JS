@@ -10,7 +10,6 @@ head
   link(rel='SHORTCUT ICON' href='favicon.ico')
   script
     include ../scripts/common.js
-    include ../scripts/weather.js
 script(type='text/javascript' src='scripts/offline.min.js')
 script(type='text/javascript' src='scripts/login.js')
 table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpadding='0')
@@ -93,7 +92,7 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                   | News Headlines
                 td(width='10')
                 td(width='284' text-align='right')
-                  p#thedate(style='text-align: right; padding-right:3px') &nbsp;
+                  p#thedate(style='text-align: right; padding-right:3px') &nbsp; #{dateget}
               // CONTENT TR
               tr
                 // LEFT COLUMN
@@ -266,19 +265,19 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                                     tr(bgcolor='#EEEEEE')
                                       td(style='font:12px;')
                                         | High:
-                                      td#weather-high(style='font:12px;')
+                                      td#weather-high(style='font:12px;') #{whigh}
                                     tr(bgcolor='#FFFFFF')
                                       td(style='font:12px;')
                                         | Low:
-                                      td#weather-low(style='font:12px;')
+                                      td#weather-low(style='font:12px;') #{wlow}
                                     tr(bgcolor='#EEEEEE')
                                       td(style='font:12px;')
                                         | Humidity:
-                                      td#weather-humid(style='font:12px;')
+                                      td#weather-humid(style='font:12px;') #{whumid}
                                     tr(bgcolor='#FFFFFF')
                                       td(style='font:12px;')
                                         | Wind:
-                                      td#weather-wind(style='font:12px;')
+                                      td#weather-wind(style='font:12px;') #{wwind}
                                     //
                                       <tr bgcolor="#EEEEEE">
                                       <td style="font:12px;">
